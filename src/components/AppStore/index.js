@@ -357,11 +357,17 @@ class AppStore extends Component {
           ))}
         </ul>
         <div className="app-item-main-container">
-          <ul className="app-item-container">
-            {filterAppItem.map(eachAppItem => (
-              <AppItem appItems={eachAppItem} key={eachAppItem.appId} />
-            ))}
-          </ul>
+          {filterAppItem.length !== 0 ? (
+            <ul className="app-item-container">
+              {filterAppItem.map(eachAppItem => (
+                <AppItem appItems={eachAppItem} key={eachAppItem.appId} />
+              ))}
+            </ul>
+          ) : (
+            <div className="not-fond-container">
+              <p className="empty-error-msg">Not Found</p>
+            </div>
+          )}
         </div>
       </div>
     )
