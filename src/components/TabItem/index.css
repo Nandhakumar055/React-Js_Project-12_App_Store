@@ -1,0 +1,19 @@
+.app-list {
+  list-style: none;
+}
+.tab-text {
+  padding: 10px;
+  color: rgb(148, 138, 138);
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+}
+.active-tab {
+  color: #f7f1f7;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-bottom: solid 2px;
+  background-color: transparent;
+}
